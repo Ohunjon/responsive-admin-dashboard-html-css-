@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Ohunjon - Adaptive Admin Dashboard template</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="saidbar">
+      <div class="saidbar-head">
+        <i class="lab la-angular"></i>
+        <span>Company Name</span>
+      </div>
+
+      <ul class="saidbar-menu-list">
+        <li class="item">
+          <i class="las la-tachometer-alt"></i> <a href="#">Dashboard</a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li class="item">
+          <i class="las la-user-friends"></i><a href="#">Customers</a>
+          <span class="tooltip">Customers</span>
+        </li>
+        <li class="item">
+          <i class="las la-tasks"></i><a href="#">Projects</a>
+          <span class="tooltip">Projects</span>
+        </li>
+        <li class="item">
+          <i class="las la-shopping-bag"></i><a href="#">Orders</a>
+          <span class="tooltip">Orders</span>
+        </li>
+        <li class="item">
+          <i class="las la-user-circle"></i><a href="#">Accounts</a>
+          <span class="tooltip">Accounts</span>
+        </li>
+        <li class="item">
+          <i class="las la-sign-out-alt"></i><a href="#">Log out</a>
+          <span class="tooltip">Log out</span>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="main-container">
+      <header>
+        <div class="header-menu">
+          <i class="las la-bars" id="menu"></i>
+          <span class="header-title"> Dashboard </span>
+        </div>
+
+        <div class="header-search">
+          <i class="las la-search"></i
+          ><input type="text" placeholder="search ..." />
+        </div>
+
+        <div class="header-user">
+          <img src="avatar.jpg" alt="" />
+          <div class="header-user-info">
+            <span class="name">Ohunjon Bakhtiyori</span
+            ><span class="status">Super Admin</span>
+          </div>
+        </div>
+      </header>
+      <main class="main-block">
+        <!-- card info -->
+        <div class="card-container">
+          <div class="card">
+            <div>
+              <h2>100</h2>
+              <span>Customers</span>
+            </div>
+            <i class="las la-user-friends"></i>
+          </div>
+          <div class="card">
+            <div>
+              <h2>120</h2>
+              <span>Orders</span>
+            </div>
+            <i class="las la-shopping-bag"></i>
+          </div>
+          <div class="card">
+            <div>
+              <h2>120</h2>
+              <span>Projects</span>
+            </div>
+            <i class="las la-tasks"></i>
+          </div>
+          <div class="card">
+            <div>
+              <h2>120 k</h2>
+              <span>Total</span>
+            </div>
+            <i class="las la-hand-holding-usd"></i>
+          </div>
+        </div>
+
+        <!-- projects & customers -->
+        <div class="recent-grid">
+          <!-- projects -->
+          <div class="projects">
+            <!-- projects card -->
+            <div class="card">
+              <div class="card-header">
+                <h2>Recent projects</h2>
+                <button>
+                  <span class="las la-arrow-right"></span> See all
+                </button>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table>
+                    <thead>
+                      <tr>
+                        <td>Project title</td>
+                        <td>Department</td>
+                        <td>Status</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>UI\UX Design</td>
+                        <td>Ui Team</td>
+                        <td><span class="status purple"></span>review</td>
+                      </tr>
+                      <tr>
+                        <td>Web development</td>
+                        <td>Front-end</td>
+                        <td><span class="status pink"></span>in progress</td>
+                      </tr>
+                      <tr>
+                        <td>U Shop app</td>
+                        <td>Mobile team</td>
+                        <td><span class="status orange"></span>pending</td>
+                      </tr>
+                      <tr>
+                        <td>UI\UX Design</td>
+                        <td>Ui Team</td>
+                        <td><span class="status purple"></span>review</td>
+                      </tr>
+                      <tr>
+                        <td>Web development</td>
+                        <td>Front-end</td>
+                        <td><span class="status pink"></span>in progress</td>
+                      </tr>
+                      <tr>
+                        <td>U Shop app</td>
+                        <td>Mobile team</td>
+                        <td><span class="status orange"></span>pending</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- customers -->
+          <div class="customers">
+            <!-- customers card -->
+            <div class="card">
+              <div class="card-header">
+                <h2>New customers</h2>
+                <button><span class="las la-arrow-right"></span>See all</button>
+              </div>
+              <div class="card-body">
+                <!-- customer block -->
+                <div class="customer">
+                  <div class="info">
+                    <img src="./avatar.jpg" width="40px" height="40px" alt="" />
+                    <div>
+                      <h4>John Week ..</h4>
+                      <small>Web Developer</small>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <span class="las la-user-circle"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
+                  </div>
+                </div>
+                <!-- customer block -->
+                <div class="customer">
+                  <div class="info">
+                    <img src="./avatar.jpg" width="40px" height="40px" alt="" />
+                    <div>
+                      <h4>John Week ..</h4>
+                      <small>Web Developer</small>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <span class="las la-user-circle"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
+                  </div>
+                </div>
+                <!-- customer block -->
+                <div class="customer">
+                  <div class="info">
+                    <img src="./avatar.jpg" width="40px" height="40px" alt="" />
+                    <div>
+                      <h4>John Week ..</h4>
+                      <small>Web Developer</small>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <span class="las la-user-circle"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
+                  </div>
+                </div>
+                <!-- customer block -->
+                <div class="customer">
+                  <div class="info">
+                    <img src="./avatar.jpg" width="40px" height="40px" alt="" />
+                    <div>
+                      <h4>John Week ..</h4>
+                      <small>Web Developer</small>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <span class="las la-user-circle"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
+                  </div>
+                </div>
+                <!-- customer block -->
+                <div class="customer">
+                  <div class="info">
+                    <img src="./avatar.jpg" width="40px" height="40px" alt="" />
+                    <div>
+                      <h4>John Week ..</h4>
+                      <small>Web Developer</small>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <span class="las la-user-circle"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
+                  </div>
+                </div>
+                <!-- customer block -->
+                <div class="customer">
+                  <div class="info">
+                    <img src="./avatar.jpg" width="40px" height="40px" alt="" />
+                    <div>
+                      <h4>John Week ..</h4>
+                      <small>Web Developer</small>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <span class="las la-user-circle"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
+                  </div>
+                </div>
+                <!-- customer block -->
+                <div class="customer">
+                  <div class="info">
+                    <img src="./avatar.jpg" width="40px" height="40px" alt="" />
+                    <div>
+                      <h4>John Week ..</h4>
+                      <small>Web Developer</small>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <span class="las la-user-circle"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
+                  </div>
+                </div>
+                <!-- customer block -->
+                <div class="customer">
+                  <div class="info">
+                    <img src="./avatar.jpg" width="40px" height="40px" alt="" />
+                    <div>
+                      <h4>John Week ..</h4>
+                      <small>Web Developer</small>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <span class="las la-user-circle"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
+                  </div>
+                </div>
+                <!-- customer block -->
+                <div class="customer">
+                  <div class="info">
+                    <img src="./avatar.jpg" width="40px" height="40px" alt="" />
+                    <div>
+                      <h4>John Week ..</h4>
+                      <small>Web Developer</small>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <span class="las la-user-circle"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="backdrop-nav"></div>
+    </div>
+
+    <script type="text/javascript">
+      let menu = document.querySelector("#menu");
+      let saidbar = document.querySelector("nav.saidbar");
+      let main_conteiner = document.querySelector("div.main-container");
+
+      let backdrop = document.querySelector("div.backdrop-nav");
+
+      backdrop.addEventListener("click", () => {
+        // main_conteiner.classList.toggle("active");
+        saidbar.classList.toggle("active");
+        main_conteiner.classList.toggle("active");
+      });
+
+      menu.onclick = () => {
+        saidbar.classList.toggle("active");
+        main_conteiner.classList.toggle("active");
+      };
+
+      // if (document.body.clientWidth > 768) {
+      //  saidbar.classList.add("active");
+      //}
+    </script>
+  </body>
+</html>
